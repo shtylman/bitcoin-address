@@ -5,9 +5,9 @@ var crypto = require('crypto');
 // local
 var base58 = require('./base58');
 
-var address_types = { prod: '00', testnet: '6f', dash: '4c', dashtestnet:'8c' };
+var address_types = { prod: '00', testnet: '6f', dash: '4c', dashtestnet:'8c', doge: '1e', dogetestnet: '71' };
 
-var p2sh_types = { prod: '05', testnet: 'c4', dash: '10', dashtestnet: '13' };
+var p2sh_types = { prod: '05', testnet: 'c4', dash: '10', dashtestnet: '13', doge: '16', dogetestnet: 'c4' };
 
 /// return address type if valid base58 address, otherwise null
 function get_address_type(address) {
